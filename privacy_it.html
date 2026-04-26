@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wallit — Informativa sulla Privacy (Italiano)</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 24px 80px;
+    color: #111827;
+    background: #F9FAFB;
+    line-height: 1.65;
+  }
+  h1 { font-weight: 800; font-size: 28px; margin-bottom: 4px; }
+  h2 { font-weight: 700; font-size: 20px; margin-top: 32px; color: #4F46E5; }
+  h3 { font-weight: 600; font-size: 16px; margin-top: 20px; }
+  .updated { color: #6B7280; font-style: italic; margin-bottom: 24px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #E5E7EB; vertical-align: top; }
+  th { background: #F3F4F6; font-weight: 600; }
+  code { background: #F3F4F6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  a { color: #4F46E5; }
+  .back { display: inline-block; margin-bottom: 24px; color: #6B7280; }
+</style>
+</head>
+<body>
+<a class="back" href="index.html">← Indietro</a>
+<h1>Wallit — Informativa sulla Privacy</h1>
+<p class="updated">Ultimo aggiornamento: 23 aprile 2026</p>
+
+<p>La presente Informativa spiega come l'applicazione mobile <strong>Wallit</strong> ("l'App") tratta le tue informazioni. L'App è sviluppata da <strong>Patrik</strong> (sviluppatore indipendente con sede in Italia).</p>
+
+<h2>1. Chi siamo</h2>
+<ul>
+  <li><strong>Titolare del trattamento</strong>: Patrik (sviluppatore indipendente)</li>
+  <li><strong>Contatto</strong>: patrik.appdeveloper@gmail.com</li>
+  <li><strong>Paese</strong>: Italia</li>
+</ul>
+
+<h2>2. Principio generale: nulla esce dal tuo telefono</h2>
+<p><strong>L'App non raccoglie, né trasmette, né archivia alcun dato personale sui nostri server.</strong></p>
+<p>Tutti i dati delle tue spese — importi, valute, date, esercenti, note, categorie, tag, trasferte — sono memorizzati esclusivamente sul tuo dispositivo tramite database locale (Isar) e Android SharedPreferences.</p>
+<p>Le foto degli scontrini scattate o importate sono salvate come file nello storage privato del tuo dispositivo e non vengono mai caricate online.</p>
+<p>L'OCR (lettura del testo dagli scontrini) avviene completamente sul dispositivo tramite Google ML Kit. L'immagine viene processata localmente e mai inviata a server esterni.</p>
+
+<h2>3. Cosa va in rete</h2>
+<p>Due funzionalità richiedono una connessione internet:</p>
+
+<h3>3.1 Tassi di cambio valuta</h3>
+<p>Quando registri una spesa in valuta diversa dalla tua valuta principale, l'App scarica il tasso di cambio storico di quel giorno da <a href="https://frankfurter.dev/">frankfurter.dev</a> (servizio pubblico gratuito basato su dati BCE). Vengono inviati solo data e codici valuta (es. <code>GBP→EUR</code>). Nessuna informazione personale, nessun importo, nessun identificativo del dispositivo.</p>
+
+<h3>3.2 Pubblicità</h3>
+<p>L'App mostra annunci tramite <strong>Google AdMob</strong>. AdMob può raccogliere:</p>
+<ul>
+  <li>Identificatori del dispositivo (Android Advertising ID)</li>
+  <li>Indirizzo IP</li>
+  <li>Informazioni di rete</li>
+  <li>Tipo di dispositivo, sistema operativo, lingua</li>
+  <li>Interazioni con gli annunci (visualizzazioni, clic)</li>
+  <li>Geolocalizzazione approssimativa (livello città)</li>
+</ul>
+
+<h3>3.3 Consenso GDPR / ePrivacy</h3>
+<p>Per gli utenti in UE, SEE, Regno Unito e Svizzera, al primo avvio appare un dialogo di consenso (Google User Messaging Platform). Puoi accettare annunci personalizzati o scegliere annunci non personalizzati. Puoi cambiare la scelta in qualsiasi momento da <strong>Impostazioni → Privacy options</strong>.</p>
+
+<h3>3.4 Funzione "Rimuovi ads per oggi"</h3>
+<p>Toccando "Rimuovi ads per oggi" viene riprodotto un breve video premiato. Al completamento, gli annunci vengono nascosti fino alla mezzanotte locale. Questa preferenza è memorizzata solo localmente.</p>
+
+<h2>4. Permessi richiesti</h2>
+<table>
+<tr><th>Permesso</th><th>Motivo</th></tr>
+<tr><td><code>INTERNET</code></td><td>Caricare tassi di cambio e annunci</td></tr>
+<tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Verificare connettività per retry FX/ads</td></tr>
+<tr><td><code>CAMERA</code></td><td>Scattare foto degli scontrini (solo quando tocchi il pulsante fotocamera)</td></tr>
+<tr><td><code>READ_MEDIA_IMAGES</code> / <code>READ_EXTERNAL_STORAGE</code></td><td>Selezionare foto di scontrini esistenti dalla galleria</td></tr>
+</table>
+<p>L'App non accede a posizione, contatti, calendario, microfono o altri dati personali.</p>
+
+<h2>5. Condivisione dei dati (export &amp; share)</h2>
+<p>Quando esporti un report (PDF, Excel, ZIP) e tocchi <strong>Condividi</strong> o <strong>Invia via email</strong>, il file viene generato localmente sul tuo dispositivo e consegnato all'app di destinazione che scegli (Gmail, Drive, ecc.). Lo sviluppatore di Wallit non riceve copia.</p>
+
+<h2>6. Minori</h2>
+<p>L'App non è destinata a bambini sotto i 13 anni. AdMob è configurato per rispettare COPPA dove applicabile.</p>
+
+<h2>7. Sicurezza dei dati</h2>
+<p>Poiché non raccogliamo dati personali sui nostri server, non c'è rischio di data breach lato nostro. I dati sul tuo dispositivo sono protetti dai meccanismi di sicurezza nativi di Android (sandbox app, crittografia file quando la crittografia del dispositivo è attiva).</p>
+
+<h2>8. I tuoi diritti (GDPR)</h2>
+<p>Poiché non trattiamo dati personali sui nostri server, i diritti GDPR dell'interessato (accesso, rettifica, cancellazione, portabilità) non si applicano a noi. Puoi:</p>
+<ul>
+  <li>Eliminare tutti i dati locali disinstallando l'App</li>
+  <li>Revocare il consenso agli annunci personalizzati da <strong>Impostazioni → Privacy options</strong></li>
+  <li>Reimpostare l'Advertising ID di Android dalle impostazioni del dispositivo</li>
+</ul>
+
+<h2>9. Informative di terze parti</h2>
+<ul>
+  <li>Google AdMob: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>Google Play Services: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+  <li>Google ML Kit (on-device): <a href="https://developers.google.com/ml-kit/terms">developers.google.com/ml-kit/terms</a></li>
+  <li>Frankfurter.dev: <a href="https://frankfurter.dev/">frankfurter.dev</a></li>
+</ul>
+
+<h2>10. Modifiche all'Informativa</h2>
+<p>Questa Informativa può essere aggiornata nel tempo. Modifiche sostanziali saranno comunicate tramite avviso in-app o note di aggiornamento sullo store.</p>
+
+<h2>11. Contatti</h2>
+<p>Per domande sulla privacy: <a href="mailto:patrik.appdeveloper@gmail.com">patrik.appdeveloper@gmail.com</a></p>
+
+</body>
+</html>
